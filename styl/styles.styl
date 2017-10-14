@@ -1,0 +1,172 @@
+primaryColor = #3558c2 
+#d95e1c
+#dca40c 
+
+* 
+    margin 0
+    padding 0
+    box-sizing border-box
+
+body 
+    background-color primaryColor
+
+.container 
+    max-width 960px
+    margin 0 auto 
+
+.clearfix 
+    clear both
+
+.box 
+    background-color #fff
+    box-shadow 4px 9px 3px rgba(#000, 30%)
+    padding 15px
+    h2
+        font-size 48px
+        font-family 'Josefin Sans'
+        text-align center
+        margin-bottom 20px
+        border-bottom 2px dashed darken(primaryColor, 10%)
+    a 
+        background-color rgba(primaryColor, 20%)
+        border-radius 6px
+        text-decoration none
+        color #555
+    a:hover
+        background-color rgba(primaryColor, 70%)
+        color #000
+
+header 
+    background-color primaryColor
+    color #fff
+    padding 8px 0
+    font-family 'Open Sans', sans-serif
+
+    h1
+        float left 
+        width auto
+        font-size 32px
+        
+
+    nav 
+        float right
+        
+        ul 
+            width auto 
+            margin-top 5px
+            float right
+
+            li 
+                display inline-block
+                text-align center
+                padding 4px 8px
+                margin-right 15px
+                border-radius 20px
+                transition all 0.3s ease-in-out
+                a
+                    font-size 20px 
+                    color #fff
+                    text-decoration none
+                &:hover
+                    border 2px solid #ffffff
+
+                    
+#hero
+    background url('../img/hero_opt.jpg')
+    height 92vh
+    background-size cover
+    #hero-box
+        animation hero-box 1s ease
+        background rgba(primaryColor, 80%)
+        color #ffffff
+        float right 
+        margin-top 14vh
+        width 50%
+        height auto
+        padding 40px 20px
+        border-radius 6px
+        transition all 300ms ease
+
+        &:hover
+            margin-top 8vh
+            background primaryColor
+            border-radius 50%
+            padding 110px 80px
+            height 400px
+            
+            
+
+        &:hover p
+            font-size 40px
+        p
+            font-size 50px
+            color #ffffff
+            font-family 'Josefin Sans', sans-serif
+        
+
+#about
+
+    .about-me 
+        position relative
+        top -90px 
+
+        p
+            font-size 24px
+            font-family 'Playfair Display'
+            margin-bottom 15px
+
+#portfolio 
+    h3
+        text-align center
+        font-size 60px 
+        color lighten(primaryColor, 20%)
+
+#contact
+    form 
+        width 50%
+        float left 
+
+        
+        label,
+        input,
+        button
+            display block
+
+        label 
+            font-size 24px
+            margin-top h15px
+            color darken(primaryColor, 30%)
+
+        label::first-child
+            margin-top 0
+        input
+            
+            border 1px solid rgba(#000, 60%)
+            border-radius 5px
+            height 25px
+            width 80%
+
+    .social-icons
+        float right 
+        width 50%
+        li 
+            list-style none
+            margin-bottom 15px
+        .social-icon
+            font-size 30px
+            padding 10px
+            margin-bottom 15px
+            background-color white
+            transition all 600ms ease-in-out
+            i
+                font-size 32px
+                border-radius 50%
+                padding 10px
+                background-color primaryColor
+                color white
+        .social-icon:hover
+            background-color primaryColor
+            color white
+        .social-icon:hover i 
+            background-color transparent
+            
