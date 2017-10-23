@@ -129,17 +129,41 @@ header nav ul li:hover {
 }
 #contact form label {
   font-size: 24px;
-  margin-top: h15px;
+  margin-bottom: 3px;
   color: #253e88;
 }
 #contact form label::first-child {
   margin-top: 0;
 }
 #contact form input {
-  border: 1px solid rgba(0,0,0,0.6);
-  border-radius: 5px;
-  height: 25px;
+  height: 45px;
+  margin-bottom: 15px;
+  padding: 13px;
+  margin-left: -5px;
+  border-radius: 20px;
+}
+#contact form input,
+#contact form textarea {
+  background-color: rgba(0,0,0,0.1);
+  padding: 10px;
+  outline: none;
+  border: none;
   width: 80%;
+  font-size: 18px;
+}
+#contact form input:focus,
+#contact form textarea:focus {
+  border: 2px solid #3558c2;
+}
+#contact form #message {
+  height: 100px;
+  margin-bottom: 20px;
+}
+#contact form button {
+  background-color: #3558c2;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
 }
 #contact .social-icons {
   float: right;
