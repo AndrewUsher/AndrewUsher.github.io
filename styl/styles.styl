@@ -1,6 +1,5 @@
 primaryColor = #3558c2 
-#d95e1c
-#dca40c 
+headerFont = 'Open Sans', sans-serif
 
 * 
     margin 0
@@ -8,7 +7,7 @@ primaryColor = #3558c2
     box-sizing border-box
 
 body 
-    background-color primaryColor
+    background linear-gradient(primaryColor, darken(primaryColor, 30%))
 
 .container 
     max-width 960px
@@ -37,46 +36,42 @@ body
         color #000
 
 header 
+    height auto
+    z-index 2
     background-color primaryColor
-    color #fff
-    padding 8px 0
-    font-family 'Open Sans', sans-serif
-
+    padding 3px 0
+    width 100%
+    position fixed
     h1
-        float left 
-        width auto
+        float left
         font-size 32px
-        
-
+        font-family headerFont
+        color white
+        display inline-block
+        font-weight 600
     nav 
         float right
-        
-        ul 
-            width auto 
-            margin-top 5px
-            float right
-
-            li 
-                display inline-block
-                text-align center
-                padding 4px 8px
-                margin-right 15px
-                border-radius 20px
-                transition all 0.3s ease-in-out
-                a
-                    font-size 20px 
-                    color #fff
-                    text-decoration none
-                &:hover
-                    border 2px solid #ffffff
-
-                    
+    ul
+        list-style none
+        float right
+        li 
+            display inline-block
+            padding 12px 0 4px 0
+            margin-left 10px 
+            &:hover 
+                border-bottom 2px solid #fff
+            a
+                color white
+                padding 0 6px
+                font-size 18px
+                text-decoration none
+                font-family headerFont
+                
 #hero
     background url('../img/hero_opt.jpg')
     height 92vh
     background-size cover
     #hero-box
-        animation hero-box 1s ease
         background rgba(primaryColor, 80%)
         color #ffffff
         float right 
@@ -86,18 +81,9 @@ header
         padding 40px 20px
         border-radius 6px
         transition all 300ms ease
-
         &:hover
-            margin-top 8vh
+            animation heroBox 2s
             background primaryColor
-            border-radius 50%
-            padding 110px 80px
-            height 400px
-            
-            
-
-        &:hover p
-            font-size 40px
         p
             font-size 50px
             color #ffffff
@@ -142,18 +128,19 @@ header
         input
             height 45px
             margin-bottom 15px
-            padding 13px
-            margin-left -5px
-            border-radius 20px
+            padding 13px 
+            border-radius 5px
         input, textarea
-            background-color rgba(#000, 10%)
+            background-color rgba(#000, 3%)
             padding 10px
             outline none 
             border none
             width 80%
             font-size 18px
+            transition all 300ms ease-in-out
             &:focus
                 border 2px solid primaryColor
+                background-color rgba(#000, 10%)
         #message 
             height 100px
             margin-bottom 20px
@@ -187,3 +174,22 @@ header
         .social-icon:hover i 
             background-color transparent
             
+
+@media screen and (max-width: 450px) 
+    header 
+        padding 5px
+        h1
+            text-align center 
+            display block
+
+
+@keyframes heroBox
+    25%
+        transform rotate(10deg)
+    50%
+        transform rotate(-10deg)
+    60%
+        transform rotate(350deg)
+        opacity 0.5
+    100%
+        transform rotate(360deg)
