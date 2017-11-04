@@ -10,7 +10,8 @@ body
     background linear-gradient(primaryColor, darken(primaryColor, 30%))
 
 .container 
-    max-width 960px
+    max-width 60rem
+    width 90%
     margin 0 auto 
 
 .clearfix 
@@ -38,13 +39,15 @@ body
 header 
     height auto
     z-index 2
-    background-color primaryColor
-    padding 3px 0
+    background-color rgba(primaryColor, 50%)
+    padding 6px 15px
     width 100%
     position fixed
+    &:hover 
+        background-color primaryColor
     h1
         float left
-        font-size 32px
+        font-size 40px
         font-family headerFont
         color white
         display inline-block
@@ -56,10 +59,11 @@ header
         float right
         li 
             display inline-block
-            padding 12px 0 4px 0
+            font-size 32px
+            margin-top 8px
             margin-left 10px 
             &:hover 
-                border-bottom 2px solid #fff
+                border-bottom 3px solid #fff
             a
                 color white
                 padding 0 6px
@@ -73,6 +77,9 @@ header
     background-size cover
     #hero-box
         background rgba(primaryColor, 80%)
+        animation heroMoveIn 2000ms
+        animation-iteration-count 1
+        position relative
         color #ffffff
         float right 
         margin-top 14vh
@@ -95,6 +102,10 @@ header
     .about-me 
         position relative
         top -90px 
+
+        #intro
+            font-weight bold
+            font-family cursive
 
         p
             font-size 24px
@@ -131,7 +142,7 @@ header
             padding 13px 
             border-radius 5px
         input, textarea
-            background-color rgba(#000, 3%)
+            background-color rgba(#000, 7%)
             padding 10px
             outline none 
             border none
@@ -193,3 +204,10 @@ header
         opacity 0.5
     100%
         transform rotate(360deg)
+
+@keyframes heroMoveIn 
+    from 
+        left 200%
+
+    to 
+        left 0
