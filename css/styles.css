@@ -44,10 +44,6 @@ body {
   background-color: rgba(53,88,194,0.7);
   color: #000;
 }
-.slide-in {
-  animation: heroMoveIn 1000ms;
-  animation-iteration-count: 1;
-}
 header {
   height: auto;
   z-index: 2;
@@ -330,37 +326,5 @@ header ul li a {
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-@-moz-keyframes heroMoveIn {
-  from {
-    right: -40%;
-  }
-  to {
-    left: 0;
-  }
-}
-@-webkit-keyframes heroMoveIn {
-  from {
-    right: -40%;
-  }
-  to {
-    left: 0;
-  }
-}
-@-o-keyframes heroMoveIn {
-  from {
-    right: -40%;
-  }
-  to {
-    left: 0;
-  }
-}
-@keyframes heroMoveIn {
-  from {
-    right: -40%;
-  }
-  to {
-    left: 0;
   }
 }
