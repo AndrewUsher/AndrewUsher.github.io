@@ -22,14 +22,14 @@ body
 // Content box styles
 .box 
     background-color: white;
-    border-radius 10px
+    border-radius 10px;
     box-shadow: 4px 9px 3px rgba(#000, 30%);
-    margin-bottom 50px
-    position: relative;
-    top: -70px;
+    margin-bottom 50px;
     padding: 0 10px;
+    position: relative;
+    top: -85px;
     h2
-        font-size: 2rem
+        font-size: 2.5rem;
         font-family: 'Josefin Sans'
         padding: 20px 0 10px 0;
         text-align: center
@@ -40,18 +40,18 @@ body
         // font-size: 3rem
         font-weight: normal
         margin-bottom: 15px
-    a 
+    a.link 
         background-color: rgba(primaryColor, 20%)
         border-radius: 6px
         text-decoration: none
         color: #555
-    a:hover
+    a.link:hover
         background-color: rgba(primaryColor, 70%)
         color: #000
     p
-        font-size: 20px;
-        line-height: 1.2em;
-        margin-bottom: 15px;
+        font-size: 24px;
+        line-height: 1.3em;
+        margin-bottom: 20px;
 // End of content box styles
 
 // Header styles
@@ -89,7 +89,7 @@ header
 
 // Hero container styles  
 #hero
-    background: url('../img/hero_opt.jpg');
+    background: url(../img/hero_opt.jpg) no-repeat center center fixed;
     height: 100vh;
     background-size: cover;
     #hero-box
@@ -115,6 +115,20 @@ header
         text-align: center
         // font-size: 6rem
         color: lighten(primaryColor, 20%)
+    .project 
+        align-items: center;
+        background-size: cover;
+        display: flex;
+        height: 400px;
+        justify-content: center;
+        max-width: 100%;
+        h3
+            justify-content: center;
+            align-content: center;
+
+.phaser-platformer
+    background: url(../img/phaser-platformer.png);
+
 
 #contact
     position: relative
