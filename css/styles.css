@@ -133,7 +133,10 @@ header ul li a {
   font-size: 3rem;
 }
 .phaser-platformer {
-  background: url("../img/phaser-platformer.png");
+  background: url("../img/phaser-platformer.png") center center no-repeat;
+}
+.analog-clock {
+  background: url("../img/analog-clock.png") center center no-repeat;
 }
 #contact {
   position: relative;
