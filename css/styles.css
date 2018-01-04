@@ -1,10 +1,11 @@
 * {
   box-sizing: border-box;
   margin: 0;
-padding
+  padding: 0;
 }
 body {
   background: #3558c2;
+  background-image: url("../img/cubes.png");
 }
 .container {
   margin: 0 auto;
@@ -27,12 +28,12 @@ body {
   top: -85px;
 }
 .box h2 {
-  font-size: 2.5rem;
+  border-bottom: 2px dashed #304faf;
   font-family: 'Josefin Sans';
+  font-size: 2.5rem;
+  margin-bottom: 0.4em;
   padding: 20px 0 10px 0;
   text-align: center;
-  border-bottom: 2px dashed #304faf;
-  margin-bottom: 0.4em;
 }
 .box h3 {
   color: #253e88;
@@ -42,8 +43,8 @@ body {
 .box a.link {
   background-color: rgba(53,88,194,0.2);
   border-radius: 6px;
-  text-decoration: none;
   color: #555;
+  text-decoration: none;
 }
 .box a.link:hover {
   background-color: rgba(53,88,194,0.7);
@@ -154,12 +155,13 @@ header ul li a {
   margin-bottom: 25px;
   text-align: left;
 }
-.social-icons li a:visited,
-.social-icons li a:link {
-  color: #3558c2;
+.social-icons li a:link,
+.social-icons li a:visited {
+  color: #253e88;
 }
 .social-icons li .social-icon {
   width: 100%;
+  border-radius: 5px;
   font-size: 30px;
   background-color: #f4f4f4;
   padding: 10px;
