@@ -19,7 +19,7 @@ body {
   border-radius: 10px;
   box-shadow: 4px 9px 3px rgba(0,0,0,0.3);
   margin-bottom: 50px;
-  padding: 0 10px;
+  padding: 0 20px;
   position: relative;
   padding-bottom: 20px;
 }
@@ -142,88 +142,35 @@ header ul li a {
   position: relative;
   top: -100px;
 }
-#contact form {
-  width: 50%;
-  float: left;
-}
-#contact form label,
-#contact form input,
-#contact form button {
-  display: block;
-}
-#contact form label {
-  margin-bottom: 3px;
-  color: #253e88;
-}
-#contact form label::first-child {
-  margin-top: 0;
-}
-#contact form input {
-  height: 4.5rem;
-  margin-bottom: 15px;
-  padding: 13px;
-  border-radius: 5px;
-}
-#contact form input,
-#contact form textarea {
-  background-color: rgba(0,0,0,0.07);
-  padding: 10px;
-  outline: none;
-  border: none;
-  width: 80%;
-  transition: all 300ms ease-in-out;
-}
-#contact form input:focus,
-#contact form textarea:focus {
-  border: 2px solid #3558c2;
-  background-color: rgba(0,0,0,0.1);
-}
-#contact form #message {
-  height: 100px;
-  margin-bottom: 20px;
-}
-#contact form button {
-  background-color: transparent;
-  color: #3558c2;
-  border: 2px solid #3558c2;
-  border-radius: 10px;
-  padding: 5px 15px;
-}
-transition: all 300ms ease-in-out {
-  margin-bottom: 40px;
-}
-transition: all 300ms ease-in-out:hover {
-  background-color: #3558c2;
-  color: #fff;
+#contact h3 {
+  font-size: 30px;
+  text-align: center;
 }
 .social-icons {
-  float: right;
-  width: 50%;
-}
-.social-icons h3 {
-  text-align: center;
+  padding-left: 0;
 }
 .social-icons li {
   list-style: none;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  text-align: left;
 }
-.social-icons .social-icon {
-  padding: 10px;
-  margin-bottom: 15px;
+.social-icons li a:visited,
+.social-icons li a:link {
+  color: #3558c2;
+}
+.social-icons li .social-icon {
+  width: 100%;
+  font-size: 30px;
   background-color: #f4f4f4;
+  padding: 10px;
+  text-decoration: none;
   transition: all 600ms ease-in-out;
 }
-.social-icons .social-icon i {
-  border-radius: 50%;
-  padding: 10px;
+.social-icons li .social-icon:hover {
   background-color: #3558c2;
   color: #f4f4f4;
 }
-.social-icons .social-icon:hover {
-  background-color: #3558c2;
-  color: #f4f4f4;
-}
-.social-icons .social-icon:hover i {
+.social-icons li .social-icon:hover i {
   background-color: transparent;
 }
 @-moz-keyframes heroBox {
