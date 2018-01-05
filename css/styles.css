@@ -118,10 +118,6 @@ header ul li a {
 #portfolio {
   margin-bottom: 150px;
 }
-#portfolio h3 {
-  text-align: center;
-  color: #5a78d2;
-}
 #portfolio .project {
   align-items: center;
   background-size: cover;
@@ -129,9 +125,6 @@ header ul li a {
   height: 400px;
   justify-content: center;
   max-width: 100%;
-}
-#portfolio .project h3 {
-  font-size: 3rem;
 }
 .phaser-platformer {
   background: url("../img/phaser-platformer.png") center center no-repeat;
