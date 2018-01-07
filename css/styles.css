@@ -198,6 +198,22 @@ header ul li a {
 .social-icons li .social-icon:hover i {
   background-color: transparent;
 }
+@media (min-width: 800px) {
+  header {
+    padding: 5px 10px;
+    padding-bottom: 0;
+  }
+  header h1 {
+    float: left;
+    display: inline-block;
+  }
+  header nav {
+    float: right;
+    padding: 0;
+    width: auto;
+    margin-top: 13px;
+  }
+}
 @-moz-keyframes heroBox {
   25% {
     transform: rotate(10deg);
