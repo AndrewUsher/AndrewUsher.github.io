@@ -81,12 +81,17 @@ header
         text-align: center;
         li 
             display: inline-block;
-            margin: 0 10px;
             text-align: center;
             a
+                border-radius: 5px;
                 color: white
                 font-size: 16px;
                 text-decoration: none
+                padding: 10px 15px;
+                transition: all 400ms ease-in-out;
+                &:hover
+                    background-color: rgba(darken($primaryColor, 40%), 30%);
+            
 
 // Hero container styles  
 #hero

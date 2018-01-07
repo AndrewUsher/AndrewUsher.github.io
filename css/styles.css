@@ -84,13 +84,18 @@ header ul {
 }
 header ul li {
   display: inline-block;
-  margin: 0 10px;
   text-align: center;
 }
 header ul li a {
+  border-radius: 5px;
   color: #f4f4f4;
   font-size: 16px;
   text-decoration: none;
+  padding: 10px 15px;
+  transition: all 400ms ease-in-out;
+}
+header ul li a:hover {
+  background-color: rgba(32,53,116,0.3);
 }
 #hero {
   background: url("../img/hero_opt.jpg") no-repeat center center fixed;
