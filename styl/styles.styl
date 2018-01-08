@@ -1,6 +1,6 @@
 // Variables
 $primaryColor = #3558c2
-headerFont = 'Open Sans', sans-serif
+$headerFont = 'Open Sans', sans-serif
 boxPadding = 30px
 white = #f4f4f4
 
@@ -69,7 +69,7 @@ header
         background-color: $primaryColor;
     h1,
     a
-        font-family: headerFont;
+        font-family: $headerFont;
     h1
         color: white;
         margin-bottom: 10px;
@@ -193,6 +193,13 @@ header
         .social-icon:hover i 
             background-color: transparent;
 
+footer 
+    background-color: darken($primaryColor, 30%);
+    padding: 15px 0;
+    p
+        font-family: $headerFont;
+        font-size: 1.25rem;
+        color: white;
 
 @keyframes heroBox
     25%
