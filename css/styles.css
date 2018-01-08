@@ -220,6 +220,11 @@ header ul li a:hover {
     margin-top: 13px;
   }
 }
+@media (max-width: 400px) {
+  #hero-box p {
+    font-size: 3rem;
+  }
+}
 @-moz-keyframes heroBox {
   25% {
     transform: rotate(10deg);
