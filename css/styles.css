@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background: #3558c2;
+  background: #5f6d98;
   background-image: url("../img/cubes.png");
 }
 .container {
@@ -26,7 +26,7 @@ body {
   top: -85px;
 }
 .box h2 {
-  border-bottom: 2px dashed #304faf;
+  border-bottom: 2px dashed #556289;
   font-family: 'Josefin Sans';
   font-size: 2.5rem;
   margin-bottom: 0.4em;
@@ -34,18 +34,18 @@ body {
   text-align: center;
 }
 .box h3 {
-  color: #253e88;
+  color: #434c6a;
   font-weight: normal;
   margin-bottom: 15px;
 }
 .box a.link {
-  background-color: rgba(53,88,194,0.2);
+  background-color: rgba(95,109,152,0.2);
   border-radius: 6px;
   color: #555;
   text-decoration: none;
 }
 .box a.link:hover {
-  background-color: rgba(53,88,194,0.7);
+  background-color: rgba(95,109,152,0.7);
   color: #000;
 }
 .box p {
@@ -54,7 +54,7 @@ body {
   margin-bottom: 20px;
 }
 header {
-  background-color: rgba(53,88,194,0.85);
+  background-color: #5f6d98;
   height: auto;
   padding-bottom: 15px;
   position: fixed;
@@ -63,7 +63,7 @@ header {
   z-index: 2;
 }
 header:hover {
-  background-color: #3558c2;
+  background-color: #5f6d98;
 }
 header h1,
 header a {
@@ -93,7 +93,7 @@ header ul li a {
   transition: all 400ms ease-in-out;
 }
 header ul li a:hover {
-  background-color: rgba(32,53,116,0.3);
+  background-color: rgba(57,65,91,0.3);
 }
 #hero {
   background: url("../img/hero_opt.jpg") no-repeat center center fixed;
@@ -103,7 +103,7 @@ header ul li a:hover {
 #hero #hero-box {
   background: rgba(244,244,244,0.85);
   border-radius: 6px;
-  color: #2a469b;
+  color: #4c577a;
   float: right;
   font-size: 3.25rem;
   height: auto;
@@ -145,7 +145,7 @@ header ul li a:hover {
 }
 #portfolio .project a:hover,
 #portfolio .project a:visited:hover {
-  background-color: rgba(53,88,194,0.3);
+  background-color: rgba(95,109,152,0.3);
 }
 #portfolio .project:before {
   background-color: rgba(0,0,0,0.4);
@@ -187,7 +187,7 @@ header ul li a:hover {
 }
 .social-icons li a:link,
 .social-icons li a:visited {
-  color: #253e88;
+  color: #434c6a;
 }
 .social-icons li .social-icon {
   width: 100%;
@@ -199,14 +199,14 @@ header ul li a:hover {
   transition: all 600ms ease-in-out;
 }
 .social-icons li .social-icon:hover {
-  background-color: #3558c2;
+  background-color: #5f6d98;
   color: #f4f4f4;
 }
 .social-icons li .social-icon:hover i {
   background-color: transparent;
 }
 footer {
-  background-color: #253e88;
+  background-color: #434c6a;
   padding: 15px 0;
 }
 footer p {
