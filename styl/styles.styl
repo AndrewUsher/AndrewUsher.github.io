@@ -1,5 +1,5 @@
 // Variables
-$primaryColor = #3558c2
+$primaryColor = desaturate(#3558c2, 30%)
 $headerFont = 'Open Sans', sans-serif
 boxPadding = 30px
 white = #f4f4f4
@@ -56,7 +56,7 @@ body
 
 // Header styles
 header 
-    background-color: rgba($primaryColor, 85%);
+    background-color: $primaryColor;
     height: auto;
     padding-bottom: 15px;
     position: fixed;
