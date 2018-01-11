@@ -22,9 +22,6 @@ body {
   position: relative;
   padding-bottom: 20px;
 }
-.box:first-child {
-  top: -85px;
-}
 .box h2 {
   border-bottom: 2px dashed #43599c;
   font-family: 'Josefin Sans';
