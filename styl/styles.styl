@@ -1,5 +1,5 @@
 // Variables
-$primaryColor = desaturate(#3558c2, 30%)
+$primaryColor = #2980b9
 $headerFont = 'Open Sans', sans-serif
 boxPadding = 30px
 white = #f4f4f4
@@ -18,6 +18,8 @@ body
     width: 90%; 
 .clearfix 
     clear: both;
+a
+    cursor: pointer;
 // End of general styles
 
 // Content box styles
@@ -60,7 +62,7 @@ header
     position: fixed;
     transition: all 800ms ease-in;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     &:hover 
         background-color: $primaryColor;
     h1,
@@ -91,23 +93,28 @@ header
 
 // Hero container styles  
 #hero
-    background: url(../img/hero_opt.jpg) no-repeat center center fixed;
+    align-items: center;
+    display: flex;
     height: 100vh;
     background-size: cover;
+    justify-content: center;
     #hero-box
-        background: rgba(white, 85%);
-        border-radius: 6px;
-        color: darken($primaryColor, 20%);
-        float: right; 
-        font-size: 3.25rem;
-        height: auto;
-        padding: 10px 20px;
-        margin-top: 130px;
+        align-items: center;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
         transition: all 300ms ease;
-        &:hover
-            animation: heroBox 2s;
         p
-            font-family: 'Josefin Sans', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 50px;
+        a
+            font-size: 2rem;
+            border-radius: 15px;
+            border: 3px solid white;
+            padding: 15px 20px;
+            &:hover 
+                background-color: rgba(black, 10%);
+
 // End of Hero container styles        
 
 
@@ -199,16 +206,15 @@ footer
         font-size: 1.25rem;
         color: white;
 
-@keyframes heroBox
+@keyframes shake
     25%
         transform: rotate(10deg);
     50%
         transform: rotate(-10deg);
     60%
-        transform: rotate(350deg);
-        opacity: .8;
+        transform: rotate(10deg);
     100%
-        transform: rotate(360deg);
+        transform: rotate(0deg);
 
 @media (min-width: 800px)
     header
