@@ -56,6 +56,7 @@ a {
 header {
   background-color: #2980b9;
   height: auto;
+  padding-left: 10px;
   padding-bottom: 15px;
   position: fixed;
   transition: all 800ms ease-in;
@@ -235,9 +236,12 @@ footer p {
     margin-top: 13px;
   }
 }
-@media (max-width: 400px) {
-  #hero-box p {
-    font-size: 3rem;
+@media screen and (max-width: 600px) {
+  #hero #hero-box p {
+    font-size: 1.7rem;
+  }
+  #hero #hero-box a {
+    font-size: 1.5rem;
   }
 }
 @-moz-keyframes shake {

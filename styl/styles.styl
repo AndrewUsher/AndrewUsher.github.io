@@ -58,6 +58,7 @@ a
 header 
     background-color: $primaryColor;
     height: auto;
+    padding-left: 10px;
     padding-bottom: 15px;
     position: fixed;
     transition: all 800ms ease-in;
@@ -229,6 +230,10 @@ footer
             width: auto;
             margin-top: 13px;
 
-@media (max-width: 400px)
-    #hero-box p
-        font-size: 3rem;
+@media screen and (max-width: 600px)
+    #hero
+        #hero-box
+            p
+                font-size: 1.7rem;
+            a
+                font-size: 1.5rem;
