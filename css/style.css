@@ -163,6 +163,9 @@ header ul li a:hover {
 .pong {
   background: url("../img/es6-pong.png") center center no-repeat;
 }
+.random-user-generator {
+  background: url("../img/random-user-generator.png") center center no-repeat;
+}
 .phaser-platformer {
   background: url("../img/phaser-platformer.png") center center no-repeat;
 }
