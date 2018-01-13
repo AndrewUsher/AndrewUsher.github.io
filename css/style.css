@@ -114,13 +114,19 @@ header ul li a:hover {
   font-size: 3rem;
   margin-bottom: 50px;
 }
-#hero #hero-box a {
+#hero #hero-box a,
+#hero #hero-box a:link,
+#hero #hero-box a:visited {
   font-size: 2rem;
   border-radius: 15px;
   border: 3px solid #f4f4f4;
+  color: #f4f4f4;
   padding: 15px 20px;
+  text-decoration: none;
 }
-#hero #hero-box a:hover {
+#hero #hero-box a:hover,
+#hero #hero-box a:link:hover,
+#hero #hero-box a:visited:hover {
   background-color: rgba(0,0,0,0.1);
 }
 #portfolio {
