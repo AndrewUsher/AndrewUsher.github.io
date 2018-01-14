@@ -111,6 +111,7 @@ header ul li a:hover {
   transition: all 300ms ease;
 }
 #hero #hero-box p {
+  animation: heroText 2s ease-in-out;
   font-size: 3rem;
   margin-bottom: 50px;
 }
@@ -118,9 +119,11 @@ header ul li a:hover {
 #hero #hero-box a:link,
 #hero #hero-box a:visited {
   font-size: 2rem;
+  animation: heroButton 2s ease-in-out;
   border-radius: 15px;
   border: 3px solid #f4f4f4;
   color: #f4f4f4;
+  display: inline-block;
   padding: 15px 20px;
   text-decoration: none;
 }
@@ -310,5 +313,89 @@ footer p {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@-moz-keyframes heroText {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+    transform: translateY(-40vh);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-webkit-keyframes heroText {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+    transform: translateY(-40vh);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-o-keyframes heroText {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+    transform: translateY(-40vh);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes heroText {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+    transform: translateY(-40vh);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-moz-keyframes heroButton {
+  from {
+    opacity: 0;
+    transform: translateY(30vh);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-webkit-keyframes heroButton {
+  from {
+    opacity: 0;
+    transform: translateY(30vh);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-o-keyframes heroButton {
+  from {
+    opacity: 0;
+    transform: translateY(30vh);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes heroButton {
+  from {
+    opacity: 0;
+    transform: translateY(30vh);
+  }
+  to {
+    opacity: 1;
+    transform: none;
   }
 }
