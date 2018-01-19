@@ -132,6 +132,16 @@ header ul li a:hover {
 #hero #hero-box a:visited:hover {
   background-color: rgba(0,0,0,0.1);
 }
+#hero #hero-box i {
+  animation: chevron 1s ease-in-out infinite;
+  animation-delay: 2s;
+  animation-direction: alternate;
+  bottom: 20px;
+  display: inline-block;
+  font-size: 40px;
+  left: 49%;
+  position: absolute;
+}
 #portfolio {
   margin-bottom: 150px;
 }
@@ -393,6 +403,46 @@ footer p {
   from {
     opacity: 0;
     transform: translateY(30vh);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-moz-keyframes chevron {
+  from {
+    transform: translateY(-30px);
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-webkit-keyframes chevron {
+  from {
+    transform: translateY(-30px);
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@-o-keyframes chevron {
+  from {
+    transform: translateY(-30px);
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes chevron {
+  from {
+    transform: translateY(-30px);
+    opacity: 0.6;
   }
   to {
     opacity: 1;

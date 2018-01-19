@@ -121,6 +121,15 @@ header
             text-decoration: none;
             &:hover 
                 background-color: rgba(black, 10%);
+        i 
+            animation: chevron 1s ease-in-out infinite;
+            animation-delay: 2s;
+            animation-direction: alternate;
+            bottom: 20px;
+            display: inline-block;
+            font-size: 40px;
+            left: 49%;
+            position: absolute;
 
 // End of Hero container styles        
 
@@ -266,3 +275,12 @@ footer
     to 
         opacity: 1;
         transform: none;
+
+@keyframes chevron
+    from
+        transform: translateY(-30px);
+        opacity: 0.6;
+    to
+        opacity: 1;
+        transform: none;
+        
