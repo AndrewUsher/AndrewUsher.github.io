@@ -82,13 +82,15 @@ header
             text-align: center;
             a
                 border-radius: 5px;
-                color: white
+                color: white;
+                display: inline-block;
                 font-size: 16px;
                 text-decoration: none
                 padding: 10px 15px;
                 transition: all 400ms ease-in-out;
                 &:hover
                     background-color: rgba(darken($primaryColor, 40%), 30%);
+                    transform: scale(1.02);
             
 
 // Hero container styles  
@@ -249,7 +251,6 @@ footer
             float: right;
             padding: 0;
             width: auto;
-            margin-top: 13px;
 
 @media screen and (max-width: 600px)
     #hero

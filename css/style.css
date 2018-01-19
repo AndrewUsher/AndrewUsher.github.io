@@ -88,6 +88,7 @@ header ul li {
 header ul li a {
   border-radius: 5px;
   color: #f4f4f4;
+  display: inline-block;
   font-size: 16px;
   text-decoration: none;
   padding: 10px 15px;
@@ -95,6 +96,7 @@ header ul li a {
 }
 header ul li a:hover {
   background-color: rgba(25,77,111,0.3);
+  transform: scale(1.02);
 }
 #hero {
   align-items: center;
@@ -258,7 +260,6 @@ footer p {
     float: right;
     padding: 0;
     width: auto;
-    margin-top: 13px;
   }
 }
 @media screen and (max-width: 600px) {
