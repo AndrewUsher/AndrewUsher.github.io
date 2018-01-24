@@ -9,28 +9,37 @@ const portfolioButton = document.getElementById('portfolio-button');
 const contact = document.getElementById('contact');
 const contactButton = document.getElementById('contact-button');
 
-heroButton.onclick = function() {
+heroButton.onclick = function () {
   window.scrollBy(0, -10);
   hero.scrollIntoView({
     behavior: 'smooth',
   });
 };
 
-aboutMeButton.onclick = function() {
+aboutMeButton.onclick = function () {
   aboutMe.scrollIntoView({
     behavior: 'smooth',
     offsetTop: -60,
   });
 };
 
-portfolioButton.onclick = function() {
+portfolioButton.onclick = function () {
   portfolio.scrollIntoView({
     behavior: 'smooth',
   });
 };
 
-contactButton.onclick = function() {
+contactButton.onclick = function () {
   contact.scrollIntoView({
     behavior: 'smooth',
   });
 };
+
+window.addEventListener('scroll', function () {
+  let scrollPosition = window.scrollY
+  if (scrollPosition > 200) {
+    header.classList.add('header-bg');
+  } else {
+    header.classList.remove('header-bg');
+  }
+})

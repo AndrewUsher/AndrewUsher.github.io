@@ -53,10 +53,10 @@ a
 
 // Header styles
 header 
-    background-color: $primaryColor;
-    height: auto;
-    padding-left: 10px;
+    display: flex;
+    padding: 10px;
     position: fixed;
+    justify-content: space-between;
     transition: all 800ms ease-in;
     width: 100%;
     z-index: 3;
@@ -71,9 +71,7 @@ header
         font-size: 2rem;
         font-weight: 600;
         text-align: center;
-    ul
-        list-style none;
-        text-align: center;
+    nav
         li 
             display: inline-block;
             text-align: center;
@@ -89,6 +87,9 @@ header
                     background-color: rgba(darken($primaryColor, 40%), 30%);
                     transform: scale(1.02);
             
+.header-bg 
+    background-color: $primaryColor;
+    padding: 5px;
 
 // Hero container styles  
 #hero
