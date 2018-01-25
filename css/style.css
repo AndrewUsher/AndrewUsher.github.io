@@ -172,8 +172,9 @@ a {
   color: #000;
 }
 .box p {
-  font-size: 24px;
-  line-height: 1.3em;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
   margin-bottom: 20px;
 }
 header {
@@ -330,7 +331,8 @@ header nav li a:hover {
   top: -100px;
 }
 #contact h3 {
-  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
   text-align: center;
 }
 .social-icons {
@@ -348,7 +350,8 @@ header nav li a:hover {
 .social-icons li .social-icon {
   width: 100%;
   border-radius: 5px;
-  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
   background-color: #f4f4f4;
   padding: 10px;
   text-decoration: none;
