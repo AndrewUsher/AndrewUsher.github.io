@@ -1,0 +1,30 @@
+{
+  "name": "andrewusher.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewUsher/andrewusher.github.io.git"
+  },
+  "keywords": [],
+  "author": "Andrew Usher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndrewUsher/andrewusher.github.io/issues"
+  },
+  "homepage": "https://github.com/AndrewUsher/andrewusher.github.io#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-cli": "^2.0.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-stylus": "^2.7.0"
+  }
+}
