@@ -19,13 +19,14 @@ heroButton.onclick = function () {
 aboutMeButton.onclick = function () {
   aboutMe.scrollIntoView({
     behavior: 'smooth',
-    offsetTop: -60,
+    block: 'center'
   });
 };
 
 portfolioButton.onclick = function () {
   portfolio.scrollIntoView({
     behavior: 'smooth',
+    block: 'start'
   });
 };
 
@@ -34,6 +35,13 @@ contactButton.onclick = function () {
     behavior: 'smooth',
   });
 };
+
+function smoothScroll(block) {
+  this.scrollIntoView({
+    behavior: 'smooth',
+    block: block
+  })
+}
 
 window.addEventListener('scroll', function () {
   let scrollPosition = window.scrollY
