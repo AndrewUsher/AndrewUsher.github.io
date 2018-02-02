@@ -1,1 +1,46 @@
-'use strict';var header=document.getElementById('header');var hero=document.getElementById('hero');var heroButton=document.getElementById('hero-button');var aboutMe=document.getElementById('about');var aboutMeButton=document.getElementById('about-button');var portfolio=document.getElementById('portfolio');var portfolioButton=document.getElementById('portfolio-button');var contact=document.getElementById('contact');var contactButton=document.getElementById('contact-button');heroButton.onclick=function(){window.scrollBy(0,-10);hero.scrollIntoView({behavior:'smooth'})};aboutMeButton.onclick=function(){aboutMe.scrollIntoView({behavior:'smooth',block:'center'})};portfolioButton.onclick=function(){portfolio.scrollIntoView({behavior:'smooth',block:'start'})};contactButton.onclick=function(){contact.scrollIntoView({behavior:'smooth'})};function smoothScroll(block){this.scrollIntoView({behavior:'smooth',block:block})}window.addEventListener('scroll',function(){var scrollPosition=window.scrollY;if(scrollPosition>200){header.classList.add('header-bg')}else{header.classList.remove('header-bg')}});
+const header = document.getElementById('header')
+const hero = document.getElementById('hero')
+const heroButton = document.getElementById('hero-button')
+const aboutMe = document.getElementById('about')
+const aboutMeButton = document.getElementById('about-button')
+const portfolio = document.getElementById('portfolio')
+const portfolioButton = document.getElementById('portfolio-button')
+const contact = document.getElementById('contact')
+const contactButton = document.getElementById('contact-button')
+
+heroButton.addEventListener('click', () => {
+  hero.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
+})
+
+aboutMeButton.addEventListener('click', () => {
+  aboutMe.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
+})
+
+portfolioButton.addEventListener('click', () => {
+  portfolio.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
+})
+
+contactButton.addEventListener('click', () => {
+  contact.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
+})
+
+window.onscroll = function () {
+  let scrollPosition = window.scrollY
+  if (scrollPosition > 300) {
+    header.classList.add('header-bg')
+  } else {
+    header.classList.remove('header-bg')
+  }
+}
